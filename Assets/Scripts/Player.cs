@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    public int health = 3; 
     public float speed;
     public Transform handPosition;
     Rigidbody2D rigidbody;
@@ -39,5 +39,14 @@ public class Player : MonoBehaviour
         Vector2 position = rigidbody.position;
 
         rigidbody.MovePosition(position + (move * speed * Time.deltaTime));
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag.Equals("Baton"))
+        {
+            health--;
+            Debug.Log("Arrrg");
+        }
     }
 }

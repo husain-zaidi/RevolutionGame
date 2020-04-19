@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Shard : MonoBehaviour
 {
+    float speed = 5;
+    float timer = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,17 @@ public class Shard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timer -= Time.deltaTime;
+        transform.Translate(0, speed * Time.deltaTime, 0);
+        if (timer <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        //if (other.gameObject.tag.Equals("Oldie"))
+        //    Destroy(gameObject);
     }
 }

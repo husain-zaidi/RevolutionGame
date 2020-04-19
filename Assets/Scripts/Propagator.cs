@@ -24,8 +24,8 @@ public class Propagator : MonoBehaviour
         List<GameObject> nearby = oldies.Distinct().ToList();
         foreach(GameObject obj in nearby)
         {
-            Vector3 direction = transform.position - obj.transform.position;
-            Instantiate(shard, transform.position, Quaternion.LookRotation(direction, Vector3.forward));
+            Vector3 direction = obj.transform.position - transform.position;
+            Instantiate(shard, transform.position, Quaternion.FromToRotation(Vector3.up,direction));
 
         }
     }

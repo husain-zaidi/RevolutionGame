@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     float timer = 5;
 
     public int flip;
+    int counter = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class Bullet : MonoBehaviour
     {
         timer -= Time.deltaTime;
         transform.Translate(flip * speed * Time.deltaTime, 0, 0);
-        if (timer <= 0)
+        if (timer <= 0 || counter <= 0)
         {
             Destroy(gameObject);
         }
@@ -36,7 +37,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag.Equals("Oldies"))
-            Destroy(gameObject);
+        if (collision.gameObject.tag.Equals("Oldie"))
+            --counter;
     }
 }

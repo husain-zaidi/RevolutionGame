@@ -1,3 +1,3 @@
 Keep The Revolution Alive!
-
-A game made for LudumDare 26
+uses Unity 2018.4.14 
+A game made for LudumDare 46
