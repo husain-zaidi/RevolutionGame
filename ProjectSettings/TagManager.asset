@@ -9,6 +9,7 @@ TagManager:
   - Shard
   - Police
   - Baton
+  - TrashCan
   layers:
   - Default
   - TransparentFX

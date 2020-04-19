@@ -7,12 +7,18 @@ public class Player : MonoBehaviour
     public int health = 3; 
     public float speed;
     public Transform handPosition;
+    public bool inTrashCan = false;
+
     Rigidbody2D rigidbody;
+    Collider2D bounds;
+
+    float trashcanCooldown = 2f;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        bounds = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -36,9 +42,23 @@ public class Player : MonoBehaviour
             transform.localScale = Vector3.one;
         }
 
+        if(inTrashCan)
+        {
+            if(Input.GetKey(KeyCode.C) && trashcanCooldown <= 0)
+            {
+                transform.position = transform.position - Vector3.right*2 - Vector3.forward * 4;
+                bounds.enabled = true;
+                inTrashCan = false;
+                trashcanCooldown = 2f;
+            }
+            trashcanCooldown -= Time.deltaTime;
+            return;
+        }
+    
         Vector2 position = rigidbody.position;
-
         rigidbody.MovePosition(position + (move * speed * Time.deltaTime));
+
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -46,7 +66,20 @@ public class Player : MonoBehaviour
         if (other.tag.Equals("Baton"))
         {
             health--;
-            Debug.Log("Arrrg");
+        }
+        
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("TrashCan") && Input.GetKey(KeyCode.C))
+        {
+            transform.position = other.transform.position + Vector3.forward * 4;
+            bounds.enabled = false;
+            inTrashCan = true;
         }
     }
+
+
+
 }
