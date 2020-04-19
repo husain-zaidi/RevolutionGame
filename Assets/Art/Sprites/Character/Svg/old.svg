@@ -15,7 +15,10 @@
    version="1.1"
    id="svg1614"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="old.svg">
+   sodipodi:docname="old.svg"
+   inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Character\old.png"
+   inkscape:export-xdpi="80"
+   inkscape:export-ydpi="80">
   <defs
      id="defs1608" />
   <sodipodi:namedview
@@ -26,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="421.17743"
+     inkscape:cx="420.28458"
      inkscape:cy="725.36395"
      inkscape:document-units="mm"
      inkscape:current-layer="g2222"
@@ -55,7 +58,7 @@
      id="layer2"
      inkscape:label="Layer 2"
      sodipodi:insensitive="true"
-     style="display:inline">
+     style="display:none">
     <rect
        style="fill:#e2e2e2;fill-opacity:1;stroke-width:0.26458332"
        id="rect2162"
