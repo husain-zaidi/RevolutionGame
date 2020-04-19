@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    float speed = 30;
-    float timer = 10;
+    float speed = 70;
+    float timer = 5;
+
     public int flip;
+
     // Start is called before the first frame update
     void Start()
     {
-        //if (transform.localRotation.z < 0)
-        //    flip = 1;
-        //else
+        Vector3 mousePos = Input.mousePosition;
+        Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
+        mousePos.x = mousePos.x - objectPos.x;
+        if (mousePos.x > 0) {
+            flip = 1;
+        }
+        else {
             flip = -1;
+        }
     }
 
     // Update is called once per frame

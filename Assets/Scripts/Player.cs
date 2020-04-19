@@ -24,7 +24,9 @@ public class Player : MonoBehaviour
 
         Vector3 mousePos = Input.mousePosition;
         Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
+
         mousePos.x = mousePos.x - objectPos.x;
+        
         if (mousePos.x > 0)
         {
             transform.localScale = new Vector3(-1,1,1);
