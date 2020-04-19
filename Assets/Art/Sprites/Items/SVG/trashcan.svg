@@ -27,7 +27,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
      inkscape:cx="598.26155"
-     inkscape:cy="743.84674"
+     inkscape:cy="661.62805"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -58,35 +58,53 @@
        d="m 127.75484,117.68496 49.44486,-8.10024 v 45.28773 h -38.56078 z"
        id="rect2070"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <path
        style="fill:#666666;fill-opacity:1;stroke-width:0.2368633"
        d="m 127.75484,75.526879 49.44485,-13.991332 1e-5,48.049173 -49.44486,8.10024 z"
        id="rect2075"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <path
        sodipodi:nodetypes="ccccccc"
        inkscape:connector-curvature="0"
        id="path2122"
        d="m 130.70909,118.36149 1.51895,-0.25942 43.40352,-7.41277 v 42.89448 h -35.03388 l -9.57701,-34.11246 z"
-       style="fill:#5c5c5c;fill-opacity:1;stroke-width:0.09769324" />
+       style="fill:#5c5c5c;fill-opacity:1;stroke-width:0.09769324"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <ellipse
        style="fill:#1a1a1a;fill-opacity:1;stroke-width:0.37471443"
        id="path2077"
        cx="156.87402"
        cy="152.25526"
        rx="10.797063"
-       ry="9.67379" />
+       ry="9.67379"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <path
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="path2080"
        d="m 128.68776,76.127456 46.96012,-13.303233 1e-5,45.686087 -46.96013,7.70188 z"
-       style="fill:#4b4b4b;fill-opacity:1;stroke-width:0.22508723" />
+       style="fill:#4b4b4b;fill-opacity:1;stroke-width:0.22508723"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <g
        id="g2100"
-       transform="matrix(1.163522,0,0,0.68880458,-24.933387,34.245492)">
+       transform="matrix(1.163522,0,0,0.68880458,-24.933387,34.245492)"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997">
       <g
          id="g2090">
         <path
@@ -111,7 +129,10 @@
     </g>
     <g
        id="g2110"
-       transform="matrix(1.163522,0,0,0.68880458,-24.933387,46.119714)">
+       transform="matrix(1.163522,0,0,0.68880458,-24.933387,46.119714)"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997">
       <g
          id="g2104">
         <path
@@ -136,7 +157,10 @@
     </g>
     <g
        transform="matrix(1.163522,0,0,0.68880458,-24.7779,59.92695)"
-       id="g2120">
+       id="g2120"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997">
       <g
          id="g2114">
         <path
@@ -165,14 +189,20 @@
        cy="152.69472"
        cx="156.55975"
        id="ellipse2124"
-       style="fill:#262626;fill-opacity:1;stroke-width:0.20085382" />
+       style="fill:#262626;fill-opacity:1;stroke-width:0.20085382"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke-width:0.17535089"
        id="rect2126"
        width="2.1918814"
        height="10.583682"
        x="155.41379"
-       y="147.51007" />
+       y="147.51007"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <rect
        y="-162.49045"
        x="151.70596"
@@ -180,7 +210,10 @@
        width="2.1918814"
        id="rect2128"
        style="fill:#000000;fill-opacity:1;stroke-width:0.1864152"
-       transform="rotate(90)" />
+       transform="rotate(90)"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <rect
        transform="rotate(135.42819)"
        style="fill:#000000;fill-opacity:1;stroke-width:0.1864152"
@@ -188,7 +221,10 @@
        width="2.1918814"
        height="11.961439"
        x="-5.3522248"
-       y="-224.67137" />
+       y="-224.67137"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <rect
        y="-3.8498278"
        x="-219.81763"
@@ -196,12 +232,18 @@
        width="2.1918814"
        id="rect2132"
        style="fill:#000000;fill-opacity:1;stroke-width:0.1864152"
-       transform="rotate(-135.12861)" />
+       transform="rotate(-135.12861)"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
     <circle
        style="fill:#aaaaaa;fill-opacity:1;stroke-width:0.17535089"
        id="path2134"
        cx="156.60367"
        cy="153.0211"
-       r="1.3151318" />
+       r="1.3151318"
+       inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\trashcan.png"
+       inkscape:export-xdpi="80.199997"
+       inkscape:export-ydpi="80.199997" />
   </g>
 </svg>
