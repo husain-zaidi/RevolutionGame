@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public Sprite twoThirds;
     public Sprite oneThird;
     public Sprite empty;
+    public List<Oldie> converts;
 
     Player player;
     Image healthbar;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         healthbar = GameObject.Find("HealthBar").GetComponent<Image>();
+        converts = new List<Oldie>();
     }
 
     // Update is called once per frame

@@ -5,14 +5,15 @@ using UnityEngine;
 public class Oldie : MonoBehaviour
 {
     public float moveDelay = 5;
-    public float speed = 5;
+    public float speed = 3;
 
     Rigidbody2D rigidbody;
     public bool converted;
     float moveLocationTimer;
     Vector2 movePosition;
-    SpriteRenderer sprite;
+    public SpriteRenderer sprite;
     //Propagator propagator;
+    GameManager manager;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class Oldie : MonoBehaviour
         movePosition = new Vector2(transform.position.x + Random.Range(-4f, 4f), transform.position.y + Random.Range(-4f, 4f));
         sprite = GetComponentInChildren<SpriteRenderer>();
         //propagator = GetComponentInChildren<Propagator>();
+        manager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -78,12 +80,13 @@ public class Oldie : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag.Equals("Bullet"))
+        if(other.gameObject.tag.Equals("Bullet") && !converted)
         {
             //propagator.Propagate();
             converted = true;
             sprite.color = Color.white;
             rigidbody.velocity = Vector2.zero;
+            manager.converts.Add(this);
         }
 
         if(other.gameObject.tag.Equals("Shard"))

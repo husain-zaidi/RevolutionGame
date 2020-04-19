@@ -5,6 +5,7 @@ using UnityEngine;
 public class Police : MonoBehaviour
 {
     public float speed = 5;
+    public float roamRange = 3f;
 
     Rigidbody2D rigidbody;
     float moveLocationTimer;
@@ -20,7 +21,7 @@ public class Police : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         moveLocationTimer = 0;
-        movePosition = new Vector2(transform.position.x + Random.Range(-4f, 4f), transform.position.y + Random.Range(-4f, 4f));
+        movePosition = new Vector2(transform.position.x + Random.Range(-roamRange, roamRange), transform.position.y + Random.Range(-roamRange, roamRange));
         player = GameObject.FindGameObjectWithTag("Player");
         batonCollider = transform.Find("BatonCollider").GetComponent<BoxCollider2D>();
     }
@@ -39,6 +40,7 @@ public class Police : MonoBehaviour
 
         if (!chase)
         {
+            speed = 5;
             //Player detection
             if (Input.GetButton("Fire1") && (Vector3.Distance(player.transform.position, transform.position) < 4))
             {
@@ -47,7 +49,7 @@ public class Police : MonoBehaviour
 
             if (moveLocationTimer <= 0)
             {
-                movePosition = new Vector2(transform.position.x + Random.Range(-4f, 4f), transform.position.y + Random.Range(-4f, 4f));
+                movePosition = new Vector2(transform.position.x + Random.Range(-roamRange, roamRange), transform.position.y + Random.Range(-roamRange, roamRange));
                 moveLocationTimer = 2;
             }
             Move(movePosition);
@@ -55,12 +57,13 @@ public class Police : MonoBehaviour
         }
         else
         {
-            speed = 7;
+            speed = 5.5f;
             movePosition = player.transform.position;
             Move(movePosition);
 
-            if (Vector2.Distance(transform.position, movePosition) >= 0.8f && !player.GetComponent<Player>().inTrashCan)
+            if (Vector2.Distance(transform.position, movePosition) <= 0.8f && !player.GetComponent<Player>().inTrashCan)
             {
+                rigidbody.velocity = Vector2.zero;
                 Hit();
             }
 
