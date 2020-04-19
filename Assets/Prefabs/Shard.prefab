@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5188947291012864508}
   - component: {fileID: 4841895412188008068}
+  - component: {fileID: 114693952628860518}
   m_Layer: 0
   m_Name: Shard
   m_TagString: Shard
@@ -121,9 +122,21 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.17
+--- !u!114 &114693952628860518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812632309555912301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b9ce56187c9ea49b1dcf5bbf129249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

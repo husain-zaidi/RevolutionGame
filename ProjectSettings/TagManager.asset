@@ -7,6 +7,8 @@ TagManager:
   - Bullet
   - Oldie
   - Shard
+  - Police
+  - Baton
   layers:
   - Default
   - TransparentFX

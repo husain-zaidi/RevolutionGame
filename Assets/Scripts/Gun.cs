@@ -50,11 +50,6 @@ public class Gun : MonoBehaviour
         if (shootTimer <= 0)
         {
             GameObject iBullet = Instantiate(bullet, bulletHole.position, Quaternion.Euler(new Vector3(0, 0, angle)));
-            if (player.transform.localScale.x < 0)
-                iBullet.GetComponent<Bullet>().flip = 1;
-            else
-                iBullet.GetComponent<Bullet>().flip = -1;
-            //iBullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             shootTimer = 0.5f;
         }
     }
