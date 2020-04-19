@@ -48,8 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55eb31c9cd54834a8b388744c0f9ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   speed: 8
   handPosition: {fileID: 7536469026322623731}
+  inTrashCan: 0
 --- !u!70 &7536469025199231448
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

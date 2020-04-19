@@ -13,6 +13,7 @@ public class Police : MonoBehaviour
     bool chase = false;
     BoxCollider2D batonCollider;
     float hitTimer = 0;
+    float trashCanCooldown = 8;
 
     // Start is called before the first frame update
     void Start()
@@ -54,14 +55,26 @@ public class Police : MonoBehaviour
         }
         else
         {
-            speed = 8;
+            speed = 7;
             movePosition = player.transform.position;
             Move(movePosition);
 
-            if (Vector2.Distance(transform.position, movePosition) >= 0.8f)
+            if (Vector2.Distance(transform.position, movePosition) >= 0.8f && !player.GetComponent<Player>().inTrashCan)
             {
                 Hit();
             }
+
+            if(player.GetComponent<Player>().inTrashCan)
+            {
+                // stop chasing after cooldown
+                trashCanCooldown -= Time.deltaTime;
+                if(trashCanCooldown <= 0)
+                {
+                    chase = false;
+                    trashCanCooldown = 8f;
+                }
+            }
+
             hitTimer -= Time.deltaTime;
         }
     }
