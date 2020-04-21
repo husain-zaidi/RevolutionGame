@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Oldie : MonoBehaviour
+public class Citizen : MonoBehaviour
 {
     public float moveDelay = 5;
     public float speed = 3;
@@ -14,6 +14,7 @@ public class Oldie : MonoBehaviour
     public SpriteRenderer sprite;
     //Propagator propagator;
     GameManager manager;
+    public bool talk = false;
 
     // Start is called before the first frame update
     void Start()
@@ -80,7 +81,12 @@ public class Oldie : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag.Equals("Bullet") && !converted)
+        if(talk)
+            Debug.Log(other.name);
+
+        if (((other.gameObject.tag.Equals("ScareBullet") && gameObject.CompareTag("CitizenOld")) ||
+            (other.gameObject.tag.Equals("ViralBullet") && gameObject.CompareTag("CitizenYoung")) )
+            && !converted)
         {
             //propagator.Propagate();
             converted = true;

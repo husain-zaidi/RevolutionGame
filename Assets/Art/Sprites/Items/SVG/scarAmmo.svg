@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg895"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="scarAmmo.svg"
+   inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Items\scareAmmo.png"
+   inkscape:export-xdpi="57.200001"
+   inkscape:export-ydpi="57.200001">
+  <defs
+     id="defs889" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="309.08651"
+     inkscape:cy="831.78482"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-nodes="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1013"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata892">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       ry="6.9377904"
+       y="39.485809"
+       x="52.652096"
+       height="76.038185"
+       width="55.725697"
+       id="rect1444"
+       style="fill:#07776d;fill-opacity:1;stroke-width:0.27256253" />
+    <rect
+       style="fill:#4ef5e7;fill-opacity:1;stroke-width:0.26458332"
+       id="rect1440"
+       width="54.522984"
+       height="73.23185"
+       x="52.384827"
+       y="39.619446"
+       ry="6.6817384" />
+    <rect
+       ry="6.5110369"
+       y="40.55489"
+       x="53.320271"
+       height="71.360962"
+       width="52.652096"
+       id="rect1442"
+       style="fill:#ccf8f5;fill-opacity:1;stroke-width:0.25666156" />
+    <path
+       style="fill:#07776d;fill-opacity:1;stroke-width:0.26458332"
+       d="m 99.42426,67.215027 c 0,9.188652 -10.93932,34.945493 -20.312484,34.945493 -9.373164,0 -19.243406,-25.355936 -19.243406,-34.544588 -10e-7,-9.188653 9.202067,-22.651093 18.575232,-22.651093 9.373165,0 20.980659,13.061535 20.980658,22.250188 z"
+       id="path1446"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss" />
+    <path
+       style="fill:#d8fcf8;fill-opacity:1;stroke-width:0.1751724"
+       d="m 77.508165,68.972106 c 0,2.638636 -2.871856,-0.08848 -6.41447,-0.08848 -3.542613,0 -6.414468,2.815588 -6.414468,0.176952 0,-2.638637 2.871855,-4.777674 6.414468,-4.777674 3.542614,0 6.41447,2.050562 6.41447,4.689198 z"
+       id="path1449"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path1452"
+       d="m 94.078876,69.239376 c 0,2.638636 -2.871856,-0.08848 -6.41447,-0.08848 -3.542613,0 -6.414468,2.815588 -6.414468,0.176952 0,-2.638637 2.871855,-4.777674 6.414468,-4.777674 3.542614,0 6.41447,2.050562 6.41447,4.689198 z"
+       style="fill:#d8fcf8;fill-opacity:1;stroke-width:0.1751724" />
+    <path
+       style="fill:#d8fcf8;fill-opacity:1;stroke-width:0.22579449"
+       d="m 89.801061,88.276727 c -2.3486,1.419241 -4.715136,0.407023 -9.841753,0.407023 -5.126618,0 -6.262934,2.64031 -9.50624,-0.523315 -2.545217,-2.482688 4.379622,-10.98962 9.50624,-10.98962 5.126617,0 12.859041,9.282588 9.841753,11.105912 z"
+       id="path1454"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss" />
+    <rect
+       style="fill:#d8fcf8;fill-opacity:0.64480878;stroke-width:0.25169754"
+       id="rect1457"
+       width="55.992966"
+       height="12.294398"
+       x="52.518463"
+       y="98.017838"
+       ry="2.4054282" />
+    <rect
+       ry="2.4054282"
+       y="45.633011"
+       x="52.251194"
+       height="12.294398"
+       width="55.992966"
+       id="rect1459"
+       style="fill:#d8fcf8;fill-opacity:0.64480878;stroke-width:0.25169754" />
+  </g>
+</svg>

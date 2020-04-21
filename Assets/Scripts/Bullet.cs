@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    float speed = 70;
+    float speed = 60;
     float timer = 5;
 
     public int flip;
@@ -13,10 +13,8 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
-        mousePos.x = mousePos.x - objectPos.x;
-        if (mousePos.x > 0) {
+        Transform player = GameObject.FindGameObjectWithTag("Player").transform;
+        if (player.localScale.x <= 0) {
             flip = 1;
         }
         else {
@@ -37,7 +35,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Oldie"))
+        if (collision.gameObject.tag.StartsWith("Citizen"))
             --counter;
     }
 }

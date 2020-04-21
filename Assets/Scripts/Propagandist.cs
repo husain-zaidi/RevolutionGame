@@ -12,9 +12,12 @@ public class Propagandist : MonoBehaviour
     float moveLocationTimer;
     Vector2 movePosition;
     GameManager manager;
+    GameObject exclaim;
     float revertTimer = 5f;
-    Oldie target;
+    Citizen target;
+    bool chasing = false;
     bool reverting = false;
+
     bool giveUp = false;
 
     // Start is called before the first frame update
@@ -24,6 +27,8 @@ public class Propagandist : MonoBehaviour
         moveLocationTimer = 0;
         movePosition = new Vector2(transform.position.x + Random.Range(-4f, 4f), transform.position.y + Random.Range(-4f, 4f));
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        exclaim = transform.Find("Exclaim").gameObject;
+        exclaim.SetActive(false);
     }
 
     // Update is called once per frame
@@ -51,9 +56,9 @@ public class Propagandist : MonoBehaviour
         // search nearest convert
         if(!reverting && manager.converts.Count > 0)
         {
-            Oldie nearestConvert = manager.converts.Distinct().ToList()[0];
+            Citizen nearestConvert = manager.converts.Distinct().ToList()[0];
             float shortestDistance = float.MaxValue;
-            foreach(Oldie convert in manager.converts.Distinct().ToList())
+            foreach(Citizen convert in manager.converts.Distinct().ToList())
             {
                 float dist = Vector3.Distance(transform.position, convert.transform.position);
                 if (dist < shortestDistance)
@@ -63,30 +68,40 @@ public class Propagandist : MonoBehaviour
                 }
             }
             target = nearestConvert;
-            reverting = true;
+            chasing = true;
 
         }
 
-        // go and convert 
-        if(reverting)
+        // go and revert 
+        if(chasing)
         {
-            speed = 7;
+            exclaim.SetActive(true);
+            speed = 8;
             Move(target.transform.position);
-            if(Vector2.Distance(transform.position, target.transform.position) <= 0.8f)
+            if(Vector2.Distance(transform.position, target.transform.position) <= 1f)
             {
-                revertTimer -= Time.deltaTime;
+                rigidbody.velocity = Vector2.zero;
+                
+                reverting = true;
+                chasing = false;
             }
 
-            if(revertTimer <= 0)
+
+        }else if(reverting)
+        {
+            revertTimer -= Time.deltaTime;
+
+            if (revertTimer <= 0)
             {
                 target.converted = false;
                 target.sprite.color = Color.yellow;
                 manager.converts.RemoveAll(IsTarget);
                 reverting = false;
                 revertTimer = 5f;
+                exclaim.SetActive(false);
             }
-
-        }else
+        }
+        else
         {
             speed = 5;
             // Random movement
@@ -102,9 +117,9 @@ public class Propagandist : MonoBehaviour
 
     }
 
-    private bool IsTarget(Oldie oldie)
+    private bool IsTarget(Citizen citizen)
     {
-        return (target.name.Equals(oldie.name));
+        return (target.name.Equals(citizen.name));
     }
 
     // Generic Move function

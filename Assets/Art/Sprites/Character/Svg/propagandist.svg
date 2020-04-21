@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="propagandist.svg">
+   sodipodi:docname="propagandist.svg"
+   inkscape:export-filename="D:\Unity Projects\Revolution\Assets\Art\Sprites\Character\propagandist.png"
+   inkscape:export-xdpi="57.200001"
+   inkscape:export-ydpi="57.200001">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="319.16758"
+     inkscape:cx="316.6422"
      inkscape:cy="501.10613"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
@@ -53,7 +56,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     style="display:none">
     <rect
        style="fill:#ebf6f7;fill-opacity:0.81999966;stroke-width:0.26458332"
        id="rect815"

@@ -32,7 +32,7 @@ public class Propagator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag.Equals("Oldie"))
+        if (other.gameObject.tag.Equals("Citizen"))
         {
             oldies.Add(other.gameObject);
         }
@@ -40,7 +40,7 @@ public class Propagator : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag.Equals("Oldie"))
+        if (other.gameObject.tag.Equals("Citizen"))
         {
             oldies.Remove(other.gameObject);
         }
