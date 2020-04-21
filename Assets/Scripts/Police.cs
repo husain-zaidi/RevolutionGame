@@ -15,6 +15,7 @@ public class Police : MonoBehaviour
     BoxCollider2D batonCollider;
     float hitTimer = 0;
     float trashCanCooldown = 8;
+    GameObject exclaim;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,8 @@ public class Police : MonoBehaviour
         movePosition = new Vector2(transform.position.x + Random.Range(-roamRange, roamRange), transform.position.y + Random.Range(-roamRange, roamRange));
         player = GameObject.FindGameObjectWithTag("Player");
         batonCollider = transform.Find("BatonCollider").GetComponent<BoxCollider2D>();
+        exclaim = transform.Find("Exclaim").gameObject;
+        exclaim.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,9 +43,9 @@ public class Police : MonoBehaviour
 
         if (!chase)
         {
-            speed = 5;
+            speed = 7;
             //Player detection
-            if (Input.GetButton("Fire1") && (Vector3.Distance(player.transform.position, transform.position) < 4))
+            if (Input.GetButton("Fire1") && (Vector3.Distance(player.transform.position, transform.position) < 7))
             {
                 chase = true;
             }
@@ -57,7 +60,8 @@ public class Police : MonoBehaviour
         }
         else
         {
-            speed = 5.5f;
+            exclaim.SetActive(true);
+            speed = 8f;
             movePosition = player.transform.position;
             Move(movePosition);
 
@@ -74,10 +78,11 @@ public class Police : MonoBehaviour
                 if(trashCanCooldown <= 0)
                 {
                     chase = false;
+                    exclaim.SetActive(false);
                     trashCanCooldown = 8f;
                 }
             }
-
+            
             hitTimer -= Time.deltaTime;
         }
     }
@@ -91,6 +96,8 @@ public class Police : MonoBehaviour
             batonCollider.enabled = true;
             hitTimer = 2f;
         }
+
+        
         
     }
 

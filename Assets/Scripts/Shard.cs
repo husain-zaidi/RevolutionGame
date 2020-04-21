@@ -26,7 +26,7 @@ public class Shard : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //if (other.gameObject.tag.Equals("Oldie"))
+        //if (other.gameObject.tag.Equals("Citizen"))
         //    Destroy(gameObject);
     }
 }
